@@ -11,6 +11,11 @@ plugins {
 group = "com.ghackett.launchpad.gui"
 version = "1.0-SNAPSHOT"
 
+tasks.wrapper {
+  gradleVersion = libs.versions.gradle.get()
+  distributionType = Wrapper.DistributionType.ALL
+}
+
 kotlin {
   jvm {
     compilations.all {
