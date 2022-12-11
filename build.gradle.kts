@@ -1,6 +1,6 @@
 plugins {
-  kotlin("multiplatform") version(libs.versions.kotlin.get()) apply(false)
-  id("org.jetbrains.compose") version(libs.versions.compose.get()) apply(false)
+  alias(libs.plugins.kmp) apply(false)
+  alias(libs.plugins.compose) apply(false)
 }
 
 allprojects {
