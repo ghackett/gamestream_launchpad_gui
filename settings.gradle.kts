@@ -20,3 +20,6 @@ dependencyResolutionManagement {
 
 rootProject.name = "gamestream_launchpad_gui"
 
+include(
+  ":app",
+)
